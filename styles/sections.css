@@ -1,0 +1,39 @@
+section {
+    & header {
+        & strong {
+            display: block;
+            font: var(--fw-md) var(--fs-sm) / 100% var(--ff-sans);
+            letter-spacing: 0.08rem;
+            text-transform: uppercase;
+            
+            color: var(--brand-color-primary);
+        }
+    }
+    
+    & h2 {
+        margin-top: 0.5rem;
+    }
+    
+    & p {
+        margin-top: 0.5rem;
+        color: var(--text-color-secondary);
+    }
+}
+
+#about{
+    background-color: var(--surface-color);
+
+    & .even-columns {
+        gap: 2rem;
+    }
+}
+
+#smartphones-img {
+    background: url(../assets/bgmobile.svg) top/cover;
+}
+
+@media (width >=80em) {
+    #smartphones-img {
+        display: none;
+    }
+}
